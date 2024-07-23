@@ -1,5 +1,7 @@
-<h1 align="center"> <img src="resources/logo.png"> </h1>
-<h1 align="center"> Проект по автоматизации тест-кейсов сайта "Зооландия.рф" </h1>
+<h1 align="center"> <img src="resources/logo.png">
+
+Проект по автоматизации тест-кейсов сайта "Зооландия.рф" </h1>
+
 
 ## Используемые инструменты
 
