@@ -11,9 +11,7 @@ def browser_params():
     yield
     browser.quit()
 
-
-''' 
-import pytest
+"""import pytest
 from dotenv import load_dotenv
 import os
 from selene import browser
@@ -67,5 +65,5 @@ def setup_browser(request):
     attach.add_logs(browser)
     attach.add_video(browser)
 
-    browser.quit()
-'''
+    browser.quit()"""
+
