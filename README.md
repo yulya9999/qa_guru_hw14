@@ -2,8 +2,7 @@
 
 Проект по автоматизации тест-кейсов сайта "Зооландия.рф" </h1>
 
-
-## Используемые инструменты
+<h1 align="center"> Используемые инструменты </h1>
 <div>
 <img src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png" title="python" alt="python" width="40" height="40"/>&nbsp  
 <img src="https://user-images.githubusercontent.com/25181517/184117132-9e89a93b-65fb-47c3-91e7-7d0f99e7c066.png" title="pytest" alt="pytest" width="40" height="40"/>&nbsp  
