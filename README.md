@@ -42,7 +42,9 @@ allure serve test/allure-results/
 ```
 </details>
 
-<details><summary>4. После выполнения команды откроется браузер с отчетом</summary>
+После выполнения команды откроется браузер с отчетом
+
+<details><summary>Пример отчета</summary>
     
 <img src="">
 
