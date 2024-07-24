@@ -17,7 +17,7 @@ class BasePage:
         return self
 
     def search_line(self, value):
-        with allure.step(f'Поиск товара "{value}"'):
+        with allure.step(f'С помощью поисковой строки найти бренд "{value}"'):
             browser.element('#title-search-input').click().type(value).press_enter()
         return self
 

@@ -21,5 +21,12 @@ class CartPage:
             browser.element('.basket-coupon-block-total-price-current').should(have.text("0 руб."))
         return self
 
+    def recovery_item(self, price):
+        with allure.step("Восстановление удаленного товара"):
+            browser.element('.basket-items-list-item-removed-block [data-entity="basket-item-restore-button"]').click()
+            browser.element('.basket-coupon-block-total-price-current').should(have.text(price))
+
+        return self
+
 
 cart_page = CartPage()
