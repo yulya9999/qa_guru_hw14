@@ -2,16 +2,16 @@ import pytest
 from selene import browser
 
 
-@pytest.fixture(scope="function", autouse=True)
+"""@pytest.fixture(scope="function", autouse=True)
 def browser_params():
     browser.config.base_url = "https://xn----7sbbogiefyveeau2v.xn--p1ai"
     browser.config.window_height = 1080
     browser.config.window_width = 1920
 
     yield
-    browser.quit()
+    browser.quit()"""
 
-"""import pytest
+import pytest
 from dotenv import load_dotenv
 import os
 from selene import browser
@@ -65,5 +65,5 @@ def setup_browser(request):
     attach.add_logs(browser)
     attach.add_video(browser)
 
-    browser.quit()"""
+    browser.quit()
 
