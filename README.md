@@ -46,13 +46,7 @@ allure serve test/allure-results/
 
 <details><summary>Пример отчета</summary>
     
-<img src="">
+<img src="resources/allure-report-1.png">
+<img src="resources/allure-report-2.png">
 
 </details>
-
-### **Для удаленного запуска тестов необходимо:**
-
-
-## **Дополнительно**
-
-Результаты тестов в Telegram
