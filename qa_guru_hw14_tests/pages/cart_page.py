@@ -7,7 +7,7 @@ class CartPage:
     def open_cart(self):
         with allure.step("Переход в корзину"):
             browser.element('.bx-basket-block [href="/personal/cart/"]').click()
-            browser.element('.col-lg-9').should(have.text("Моя корзина"))
+            browser.element('#content_body').should(have.text("Моя корзина"))
         return self
 
     def check_item_cart(self, info_item):

@@ -1,23 +1,10 @@
 import pytest
-from selene import browser
-
-
-"""@pytest.fixture(scope="function", autouse=True)
-def browser_params():
-    browser.config.base_url = "https://xn----7sbbogiefyveeau2v.xn--p1ai"
-    browser.config.window_height = 1080
-    browser.config.window_width = 1920
-
-    yield
-    browser.quit()"""
-
-import pytest
 from dotenv import load_dotenv
 import os
 from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from utils import attach
+from qa_guru_hw14_tests.utils import attach
 
 DEFAULT_BROWSER_VERSION = '100.0'
 
@@ -36,7 +23,7 @@ def load_env():
 
 @pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
-    browser.config.base_url = "https://xn----7sbbogiefyveeau2v.xn--p1ai"
+    browser.config.base_url = "https://зооландия-пенза.рф"
     browser.config.window_height = 1080
     browser.config.window_width = 1920
 

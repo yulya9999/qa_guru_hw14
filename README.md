@@ -1,4 +1,4 @@
-<h1 align="center"> <img src="resources/logo.png">
+<h1 align="center"> <img src="resources/images/logo.png">
 
 Проект по автоматизации тест-кейсов сайта "Зооландия.рф" </h1>
 
@@ -50,7 +50,7 @@ allure serve test/allure-results/
 
 <details><summary>Пример отчета</summary>
 
-<img src="resources/allure-report-1.png">
+<img src="resources/images/allure-report-1.png">
 
 </details>
 
@@ -61,7 +61,7 @@ allure serve test/allure-results/
 
 <details><summary>Пример</summary>
 
-<img src="resources/jenkins-build-now.png">
+<img src="resources/images/jenkins-build-now.png">
 
 </details>
 
@@ -70,7 +70,7 @@ allure serve test/allure-results/
 
 <details><summary>Пример отчета в allure</summary>
 
-<img src="resources/allure-report-2.png">
+<img src="resources/images/allure-report-2.png">
 
 </details>
 
@@ -78,7 +78,7 @@ allure serve test/allure-results/
 
 <details><summary>Пример отчета в telegram</summary>
 
-<img src="resources/telegram-report.png" alt="report Telegram">
+<img src="resources/images/telegram-report.png" alt="report Telegram">
 
 </details>
 
@@ -86,6 +86,6 @@ allure serve test/allure-results/
 
 <details><summary>Пример видеоотчета о прохождении тестов</summary>
 
-<img src="resources/example-video.gif" alt="gif example">
+<img src="resources/videos/example-video.gif" alt="gif example">
 
 </details>
