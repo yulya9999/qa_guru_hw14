@@ -8,7 +8,7 @@ from zoolandia_project_tests.models.pages.cart_page import cart_page
 def test_add_toy_lazzaro():
     base_page.open_browser("Команда интернет-магазина «Зооландия» рада приветствовать вас!")
     base_page.search_line("LAZZARO")
-    base_page.go_to_product_page("LAZZARO Игрушка д/кошек катушка с перьями")
+    base_page.go_to_product_page("LAZZARO Игрушка д/кошек катушка с перьями ")
     base_page.add_item_cart()
     base_page.close_modal_window_after_add_cart()
     cart_page.open_cart()
