@@ -12,7 +12,7 @@ def test_add_toy_lazzaro():
     base_page.add_item_cart()
     base_page.close_modal_window_after_add_cart()
     cart_page.open_cart()
-    cart_page.check_item_cart("LAZZARO Игрушка д/кошек катушка с перьями")
+    cart_page.check_item_cart("LAZZARO Игрушка д/кошек катушка с перьями ")
     cart_page.clean_cart()
 
 
