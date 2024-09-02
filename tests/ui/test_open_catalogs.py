@@ -1,5 +1,5 @@
 import allure
-from qa_guru_hw14_tests.models.pages.base_page import base_page
+from zoolsndia_project_tests.models.pages.base_page import base_page
 
 
 @allure.feature("Тестирование сайта 'зооландия-пенза.рф'")
