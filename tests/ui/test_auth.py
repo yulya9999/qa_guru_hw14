@@ -1,5 +1,5 @@
 import allure
-from zoolsndia_project_tests.models.pages.auth_page import auth_page
+from zoolandia_project_tests.models.pages.auth_page import auth_page
 
 
 @allure.feature("Тестирование сайта 'зооландия-пенза.рф'")

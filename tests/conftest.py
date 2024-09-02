@@ -4,7 +4,7 @@ import os
 from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from zoolsndia_project_tests.utils import attach
+from zoolandia_project_tests.utils import attach
 
 DEFAULT_BROWSER_VERSION = '100.0'
 

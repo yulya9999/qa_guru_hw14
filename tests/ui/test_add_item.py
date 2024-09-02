@@ -1,6 +1,6 @@
 import allure
-from zoolsndia_project_tests.models.pages.base_page import base_page
-from zoolsndia_project_tests.models.pages.cart_page import cart_page
+from zoolandia_project_tests.models.pages.base_page import base_page
+from zoolandia_project_tests.models.pages.cart_page import cart_page
 
 
 @allure.feature("Тестирование сайта 'зооландия-пенза.рф'")

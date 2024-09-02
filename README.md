@@ -22,7 +22,7 @@
 <details><summary>1. Склонировать репозиторий</summary>
 
 ```
-git clone https://github.com/yulya9999/qa_guru_hw14
+https://github.com/yulya9999/zoolandia-project-tests.git
 ```
 
 </details>
