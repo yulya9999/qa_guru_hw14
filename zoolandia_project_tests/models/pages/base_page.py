@@ -18,6 +18,7 @@ class BasePage:
 
     def go_to_info_page(self, page, content):
         with allure.step(f"Переход на страницу {page}"):
+            browser.open("/")
             browser.all(f'.container [href="{page}"]').second.click()
             browser.element("#content_body").should(have.text(content))
         return self

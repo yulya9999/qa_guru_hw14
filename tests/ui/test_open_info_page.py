@@ -2,7 +2,8 @@ import allure
 from zoolandia_project_tests.models.pages.base_page import base_page
 
 
-@allure.feature("Тестирование сайта 'зооландия-пенза.рф'")
+@allure.epic("Тестирование сайта 'зооландия-пенза.рф'")
+@allure.feature("Информационные страницы")
 @allure.story("Проверка перехода на информационные страницы")
 def test_go_to_page_success():
     base_page.go_to_info_page("/discount/", "Скидки")

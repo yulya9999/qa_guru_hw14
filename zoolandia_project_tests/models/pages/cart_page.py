@@ -10,6 +10,12 @@ class CartPage:
             browser.element('#content_body').should(have.text("Моя корзина"))
         return self
 
+    def open_cart_with_modal_window(self):
+        with allure.step("Переход в корзину после добавления товара в корзину из всплывающего окна"):
+            browser.all(".popup-window-buttons .btn-primary").first.click()
+            browser.element('#content_body').should(have.text("Моя корзина"))
+        return self
+
     def check_item_cart(self, info_item):
         with allure.step(f'Проверка наличия товара "{info_item}" в корзине'):
             browser.element('.basket-item-info-name').should(have.text(info_item))

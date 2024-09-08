@@ -2,7 +2,8 @@ import allure
 from zoolandia_project_tests.models.pages.base_page import base_page
 
 
-@allure.feature("Тестирование сайта 'зооландия-пенза.рф'")
+@allure.epic("Тестирование сайта 'зооландия-пенза.рф'")
+@allure.feature("Все каталоги магазина")
 @allure.story("Проверка перехода в каталог")
 def test_open_catalog_success():
     base_page.open_catalog("/sobakam/", "Собакам")

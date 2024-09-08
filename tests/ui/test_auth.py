@@ -2,7 +2,8 @@ import allure
 from zoolandia_project_tests.models.pages.auth_page import auth_page
 
 
-@allure.feature("Тестирование сайта 'зооландия-пенза.рф'")
+@allure.epic("Тестирование сайта 'зооландия-пенза.рф'")
+@allure.feature("Главная страница")
 @allure.story("Авторизация пользователя")
 def test_auth():
     auth_page.user_auth()
