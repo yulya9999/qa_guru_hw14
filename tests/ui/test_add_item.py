@@ -4,15 +4,15 @@ from zoolandia_project_tests.models.pages.cart_page import cart_page
 
 
 @allure.feature("Тестирование сайта 'зооландия-пенза.рф'")
-@allure.story('Товар "LAZZARO Игрушка д/кошек шар с перьями"')
+@allure.story('Товар "LAZZARO Adult Dog all breed DEER для собак всех пород с ОЛЕНИНОЙ"')
 def test_add_toy_lazzaro():
     base_page.open_browser("Команда интернет-магазина «Зооландия» рада приветствовать вас!")
     base_page.search_line("LAZZARO")
-    base_page.go_to_product_page("LAZZARO Игрушка д/кошек катушка с перьями ")
+    base_page.go_to_product_page("LAZZARO Adult Dog all breed DEER для собак всех пород с ОЛЕНИНОЙ")
     base_page.add_item_cart()
     base_page.close_modal_window_after_add_cart()
     cart_page.open_cart()
-    cart_page.check_item_cart("LAZZARO Игрушка д/кошек катушка с перьями ")
+    cart_page.check_item_cart("LAZZARO Adult Dog all breed DEER для собак всех пород с ОЛЕНИНОЙ")
     cart_page.clean_cart()
 
 

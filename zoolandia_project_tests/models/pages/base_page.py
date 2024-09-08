@@ -10,10 +10,16 @@ class BasePage:
             browser.element("#content_body").should(have.text(content))
         return self
 
-    def open_catalog(self, url, content):
-        with allure.step(f"Открыть каталог {url}"):
-            browser.open(f'/catalog{url}')
-        browser.element("#content_body").should(have.text(content))
+    def open_catalog(self, catalog, content):
+        with allure.step(f"Открыть каталог {catalog}"):
+            browser.open(f'/catalog{catalog}')
+            browser.element("#content_body").should(have.text(content))
+        return self
+
+    def go_to_info_page(self, page, content):
+        with allure.step(f"Переход на страницу {page}"):
+            browser.all(f'.container [href="{page}"]').second.click()
+            browser.element("#content_body").should(have.text(content))
         return self
 
     def search_line(self, name_brand):

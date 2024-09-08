@@ -13,3 +13,4 @@ def test_open_catalog_success():
     base_page.open_catalog("/reptiliyam/", "Рептилиям")
     base_page.open_catalog("/khorkam/", "Хорькам")
     base_page.open_catalog("/aptechka/", "Аптечка")
+
