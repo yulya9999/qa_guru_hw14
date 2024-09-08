@@ -56,7 +56,7 @@ allure serve test/allure-results/
 
 ### **Для удаленного запуска тестов необходимо:**
 
-1. Открыть [проект на Jenkins](https://jenkins.autotests.cloud/job/qa_guru_hw14_tests/)
+1. Открыть [проект на Jenkins](https://jenkins.autotests.cloud/job/zoolandia-project-tests-UI/)
 2. Нажать на кнопку "Build Now" (1) и дождаться окончания выполнения тестов (2)
 
 <details><summary>Пример</summary>
