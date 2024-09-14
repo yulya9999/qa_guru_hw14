@@ -88,7 +88,7 @@ allure serve test/allure-results/
 
 </details>
 
-4. После прохождения тестов, в telegram придет сообщение с отчетом
+5. После прохождения тестов, в telegram придет сообщение с отчетом
 
 <details><summary>Пример отчета в telegram</summary>
 
