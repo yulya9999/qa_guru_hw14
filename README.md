@@ -1,6 +1,6 @@
-<h1 align="center"> <img src="resources/images/logo.png">
+<h1 align="center"> <img src="resources/images/logo.png"></h1>
 
-Проект по автоматизации тест-кейсов сайта "Зооландия.рф" </h1>
+<h1 align="center"> Проект по автоматизации тест-кейсов сайта "Зооландия.рф" </h1>
 
 ## Используемые инструменты
 
@@ -58,7 +58,7 @@ allure serve test/allure-results/
 ### **Для удаленного запуска тестов необходимо:**
 
 1. Открыть [проект на Jenkins](https://jenkins.autotests.cloud/job/zoolandia-project-tests-UI/)
-2. Нажать на кнопку "Build Now" (1) и дождаться окончания выполнения тестов (2)
+2. Нажать на кнопку "Build Now" и дождаться окончания выполнения тестов
 
 <details><summary>Пример</summary>
 
@@ -66,28 +66,27 @@ allure serve test/allure-results/
 
 </details>
 
-3. Для получения отчета о прохождении тестов в allure, следует нажать на
+3. Для получения отчета о прохождении тестов в [Allure](https://jenkins.autotests.cloud/job/zoolandia-project-tests-UI/9/allure/), следует нажать на
    иконку<img src="/resources/images/allure-icon.png" title="allure" alt="allure" width="20" height="20"/>
 
-<details><summary>Пример отчета в allure</summary>
+- ***Пример отчета в Allure***
 
 <img src="resources/images/allure-report-2.png">
 
 </details>
 
-4. Отчет в [Allure TestOps](https://allure.autotests.cloud/project/4436/dashboards) <img src="resources/images/AllureTestOps.png" width="30" height="30"  alt="Allure TestOps"/>
+4. Для получения отчета о прохождении тестов в [Allure TestOps](https://allure.autotests.cloud/project/4436/dashboards), следует нажать на
+   иконку <img src="resources/images/AllureTestOps.png" width="30" height="30"  alt="Allure TestOps"/>
 
-<details><summary>Основной отчет</summary>
+- ***Пример отчета в Allure TestOps***
 
-<img src="resources/images/allure_tests-2.png">
+<h1 align="center"><img src="resources/images/allure_tests-2.png"> </h1>
 
-</details>
 
-<details><summary>Тесты</summary>
+- ***Просмотр тест-кейсов***
 
 <img src="resources/images/allure_tests_keys.png">
 
-</details>
 
 5. После прохождения тестов, в telegram придет сообщение с отчетом
 
@@ -98,12 +97,9 @@ allure serve test/allure-results/
 </details>
 
 
-
-
 ## **Дополнительно**
 
-<details><summary>Пример видеоотчета о прохождении тестов</summary>
+### Пример видеоотчета о прохождении тестов
 
 <img src="resources/videos/gif_test.gif" alt="gif example">
 
-</details>
