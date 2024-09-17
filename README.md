@@ -73,7 +73,6 @@ allure serve test/allure-results/
 
 <img src="resources/images/allure-report-2.png">
 
-</details>
 
 4. Для получения отчета о прохождении тестов в [Allure TestOps](https://allure.autotests.cloud/project/4436/dashboards), следует нажать на
    иконку <img src="resources/images/AllureTestOps.png" width="30" height="30"  alt="Allure TestOps"/>
