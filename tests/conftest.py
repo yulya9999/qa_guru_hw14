@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from zoolandia_project_tests.utils import attach
 
 DEFAULT_BROWSER_VERSION = '100.0'
-BASE_URL = "https://зооландия-пенза.рф"
+BASE_URL = "https://xn----7sbbogiefyveeau2v.xn--p1ai"
 
 
 def pytest_addoption(parser):
@@ -24,7 +24,7 @@ def load_env():
 
 @pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
-    browser.config.base_url = "https://зооландия-пенза.рф"
+    browser.config.base_url = "https://xn----7sbbogiefyveeau2v.xn--p1ai"
     browser.config.window_height = 1080
     browser.config.window_width = 1920
 
