@@ -9,18 +9,16 @@ class BasePage:
     def open_browser(self):
         with allure.step(f"Открыть главную страницу"):
             browser.open("/")
-            # browser.element("#content_body").should(have.text(content))
         return self
 
     def validate_url(self, url):
         with allure.step(f"Проверка открытой страницы"):
-            browser.should(have.url(BASE_URL+url))
+            browser.should(have.url(BASE_URL+f'/catalog{url}'))
         return self
 
     def open_catalog(self, url):
         with allure.step(f"Открыть каталог {url}"):
             browser.open(f'/catalog{url}')
-            # browser.element("#content_body").should(have.text(content))
         return self
 
     def click_nav_bar_text(self, url):
