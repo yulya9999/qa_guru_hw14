@@ -2,24 +2,24 @@ import allure
 from selene import browser, have
 
 
+@allure.epic("Тестирование сайта 'зооландия-пенза.рф'")
+@allure.feature("Тестирование корзины")
 class CartPage:
 
-    def open_cart(self):
+    def open_cart(self, info_item):
         with allure.step("Переход в корзину"):
             browser.element('.bx-basket-block [href="/personal/cart/"]').click()
-            browser.element('#content_body').should(have.text("Моя корзина"))
-        return self
-
-    def open_cart_with_modal_window(self):
-        with allure.step("Переход в корзину после добавления товара в корзину из всплывающего окна"):
-            browser.all(".popup-window-buttons .btn-primary").first.click()
-            browser.element('#content_body').should(have.text("Моя корзина"))
-        return self
-
-    def check_item_cart(self, info_item):
         with allure.step(f'Проверка наличия товара "{info_item}" в корзине'):
             browser.element('.basket-item-info-name').should(have.text(info_item))
         return self
+
+    # def open_cart_with_modal_window(self, info_item):
+    #     with allure.step("Переход в корзину после добавления товара в корзину из всплывающего окна"):
+    #         browser.all(".popup-window-buttons .btn-primary").first.click()
+    #     with allure.step(f'Проверка наличия товара "{info_item}" в корзине'):
+    #         browser.element('.basket-item-info-name').should(have.text(info_item))
+    #     return self
+
 
     def clean_cart(self):
         with allure.step("Очистка корзины"):

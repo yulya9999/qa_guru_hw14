@@ -1,17 +1,22 @@
 import allure
+import pytest
 from zoolandia_project_tests.models.pages.base_page import base_page
 
 
-@allure.epic("Тестирование сайта 'зооландия-пенза.рф'")
 @allure.feature("Все каталоги магазина")
 @allure.story("Проверка перехода в каталог")
-def test_open_catalog_success():
-    base_page.open_catalog("/sobakam/", "Собакам")
-    base_page.open_catalog("/koshkam/", "Кошкам")
-    base_page.open_catalog("/gryzunam/", "Грызунам")
-    base_page.open_catalog("/ptitsam/", "Птицам")
-    base_page.open_catalog("/rybkam/", "Рыбкам")
-    base_page.open_catalog("/reptiliyam/", "Рептилиям")
-    base_page.open_catalog("/khorkam/", "Хорькам")
-    base_page.open_catalog("/aptechka/", "Аптечка")
-
+@pytest.mark.parametrize("url, page_title", [
+    ("/sobakam/", "Собакам"),
+    ("/koshkam/", "Кошкам"),
+    ("/gryzunam/", "Грызунам"),
+    ("/ptitsam/", "Птицам"),
+    ("/rybkam/", "Рыбкам"),
+    ("/reptiliyam/", "Рептилиям"),
+    ("/khorkam/", "Хорькам"),
+    ("/aptechka/", "Аптечка"),
+])
+def test_open_catalog_success(url, page_title):
+    base_page.open_browser()
+    base_page.validate_url(url)
+    base_page.open_catalog(url)
+    base_page.check_title(page_title)

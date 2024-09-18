@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from zoolandia_project_tests.utils import attach
 
 DEFAULT_BROWSER_VERSION = '100.0'
+BASE_URL = "https://зооландия-пенза.рф"
 
 
 def pytest_addoption(parser):
@@ -53,4 +54,3 @@ def setup_browser(request):
     attach.add_video(browser)
 
     browser.quit()
-
