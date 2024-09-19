@@ -20,7 +20,6 @@ class CartPage:
     #         browser.element('.basket-item-info-name').should(have.text(info_item))
     #     return self
 
-
     def clean_cart(self):
         with allure.step("Очистка корзины"):
             browser.element('[class="basket-item-actions-remove visible-xs"]').click()
