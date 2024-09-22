@@ -3,7 +3,6 @@ import pytest
 from zoolandia_project_tests.models.pages.base_page import base_page
 
 
-@allure.feature("Информационные страницы")
 @allure.story("Проверка перехода на информационные страницы")
 @pytest.mark.parametrize("url, page_title", [
     ("/discount/", "Скидки"),
