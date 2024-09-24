@@ -1,7 +1,7 @@
 import os
 import allure
 from zoolandia_project_tests.models.pages.auth_page import auth_page
-from zoolandia_project_tests.models.pages.user_page import User
+from zoolandia_project_tests.data.user import User
 
 
 @allure.story("Авторизация пользователя")

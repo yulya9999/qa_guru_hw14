@@ -14,7 +14,7 @@ class BasePage:
     @allure.feature("Страница каталога")
     def validate_url(self, url):
         with allure.step(f"Проверка открытой страницы"):
-            browser.should(have.url(BASE_URL+f'/catalog{url}'))
+            browser.should(have.url(BASE_URL+url))
         return self
 
     @allure.feature("Страница каталога")

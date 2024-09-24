@@ -5,14 +5,14 @@ from zoolandia_project_tests.models.pages.base_page import base_page
 
 @allure.story("Проверка перехода в каталог")
 @pytest.mark.parametrize("url, page_title", [
-    ("/sobakam/", "Собакам"),
-    ("/koshkam/", "Кошкам"),
-    ("/gryzunam/", "Грызунам"),
-    ("/ptitsam/", "Птицам"),
-    ("/rybkam/", "Рыбкам"),
-    ("/reptiliyam/", "Рептилиям"),
-    ("/khorkam/", "Хорькам"),
-    ("/aptechka/", "Аптечка"),
+    ("/catalog/sobakam/", "Собакам"),
+    ("/catalog/koshkam/", "Кошкам"),
+    ("/catalog/gryzunam/", "Грызунам"),
+    ("/catalog/ptitsam/", "Птицам"),
+    ("/catalog/rybkam/", "Рыбкам"),
+    ("/catalog/reptiliyam/", "Рептилиям"),
+    ("/catalog/khorkam/", "Хорькам"),
+    ("/catalog/aptechka/", "Аптечка"),
 ])
 def test_open_catalog_success(url, page_title):
     base_page.open_catalog(url)

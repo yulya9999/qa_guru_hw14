@@ -22,7 +22,7 @@ def load_env():
     load_dotenv()
 
 
-@pytest.fixture(scope='function', autouse=True)
+@pytest.fixture(scope='session', autouse=True)
 def setup_browser(request):
     browser.config.base_url = "https://xn----7sbbogiefyveeau2v.xn--p1ai"
     browser.config.window_height = 1080
