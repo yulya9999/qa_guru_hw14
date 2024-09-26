@@ -2,20 +2,21 @@ import allure
 from selene import browser, have
 
 from tests.conftest import BASE_URL
+from zoolandia_project_tests.data.feed import Feed
 
 
 class BasePage:
     def open_browser(self, url=None):
         with allure.step(f"Открыть {BASE_URL}{url}"):
             if url is not None:
-                browser.open(BASE_URL+url)
+                browser.open(BASE_URL + url)
             else:
                 browser.open("/")
         return self
 
     def validate_url(self, url):
         with allure.step(f"Проверка открытой страницы"):
-            browser.should(have.url(BASE_URL+url))
+            browser.should(have.url(BASE_URL + url))
         return self
 
     def click_nav_bar_text(self, url):
@@ -28,11 +29,11 @@ class BasePage:
             browser.element("#content_body").should(have.text(content))
         return self
 
-    def find_item(self, name_brand, name_product):
-        with allure.step(f'С помощью поисковой строки найти бренд "{name_brand}"'):
-            browser.element('#title-search-input').click().type(name_brand).press_enter()
-        with allure.step(f'Переход на страницу товара "{name_product}"'):
-            browser.element(f'.product-item-title [title="{name_product}"]').click()
+    def find_item(self, feed: Feed):
+        with allure.step(f'С помощью поисковой строки найти бренд "{feed.brand}"'):
+            browser.element('#title-search-input').click().type(feed.brand).press_enter()
+        with allure.step(f'Переход на страницу товара "{feed.description}"'):
+            browser.element(f'.product-item-title [title="{feed.description}"]').click()
         return self
 
     def add_item_cart(self):

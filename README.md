@@ -66,26 +66,25 @@ allure serve test/allure-results/
 
 </details>
 
-3. Для получения отчета о прохождении тестов в [Allure](https://jenkins.autotests.cloud/job/zoolandia-project-tests-UI/9/allure/), следует нажать на
+3. Для получения отчета о прохождении тестов
+   в [Allure](https://jenkins.autotests.cloud/job/zoolandia-project-tests-UI/9/allure/), следует нажать на
    иконку<img src="/resources/images/allure-icon.png" title="allure" alt="allure" width="20" height="20"/>
 
 - ***Пример отчета в Allure***
 
 <img src="resources/images/allure-report-2.png">
 
-
-4. Для получения отчета о прохождении тестов в [Allure TestOps](https://allure.autotests.cloud/project/4436/dashboards), следует нажать на
+4. Для получения отчета о прохождении тестов в [Allure TestOps](https://allure.autotests.cloud/project/4436/dashboards),
+   следует нажать на
    иконку <img src="resources/images/AllureTestOps.png" width="30" height="30"  alt="Allure TestOps"/>
 
 - ***Пример отчета в Allure TestOps***
 
 <h1 align="center"><img src="resources/images/allure_tests-2.png"> </h1>
 
-
 - ***Просмотр тест-кейсов***
 
 <img src="resources/images/allure_tests_keys.png">
-
 
 5. После прохождения тестов, в telegram придет сообщение с отчетом
 
@@ -94,7 +93,6 @@ allure serve test/allure-results/
 <img src="resources/images/telegram-report.png" alt="report Telegram">
 
 </details>
-
 
 ## **Дополнительно**
 
