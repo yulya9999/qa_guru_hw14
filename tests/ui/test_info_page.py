@@ -12,7 +12,7 @@ class TestInfoPage:
         ("/contacts/", "Контакты и телефоны"),
         ("/about/delivery/", "Доставка заказа, способы, сроки и стоимость доставки"),
     ])
-    def test_navigation_bar_links(url, page_title):
+    def test_navigation_bar_links(self, url, page_title):
         base_page.open_browser(url)
         base_page.validate_url(url)
         base_page.click_nav_bar_text(url)

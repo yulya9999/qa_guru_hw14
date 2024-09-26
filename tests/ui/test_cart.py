@@ -8,7 +8,7 @@ from zoolandia_project_tests.models.pages.cart_page import cart_page
 @allure.feature("Тестирование корзины")
 class TestCart:
     @allure.story('Проверка добавления товара в корзину')
-    def test_add_item_to_cart():
+    def test_add_item_to_cart(self):
         lazzaro_feed = Feed(brand="LAZZARO",
                             description="LAZZARO Adult Dog all breed DEER для собак всех пород с ОЛЕНИНОЙ",
                             price="10")
@@ -19,7 +19,7 @@ class TestCart:
         cart_page.check_item_in_cart(lazzaro_feed)
 
     @allure.story('Проверка очистки корзины')
-    def test_add_toy_lazzaro():
+    def test_add_toy_lazzaro(self):
         lazzaro_feed = Feed(brand="LAZZARO",
                             description="LAZZARO Adult Dog all breed DEER для собак всех пород с ОЛЕНИНОЙ",
                             price="10")
@@ -32,7 +32,7 @@ class TestCart:
         cart_page.check_cart_price(lazzaro_feed)
 
     @allure.story('Проверка восстановления товара в корзине')
-    def test_restoring_del_product():
+    def test_restoring_del_product(self):
         fiory_feed = Feed(brand="FIORY",
                           description="FIORY Корм для хорьков 650г",
                           price="1 167")

@@ -17,7 +17,7 @@ class TestCatalog:
         ("/catalog/khorkam/", "Хорькам"),
         ("/catalog/aptechka/", "Аптечка"),
     ])
-    def test_open_catalog_success(url, page_title):
+    def test_open_catalog_success(self, url, page_title):
         base_page.open_browser(url)
         base_page.validate_url(url)
         base_page.check_title(page_title)
