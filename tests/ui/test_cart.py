@@ -20,7 +20,8 @@ def test_add_item_to_cart(lazzaro_feed):
     base_page.open_browser()
     base_page.find_item(lazzaro_feed["brand"], lazzaro_feed["description"])
     base_page.add_item_cart()
-    cart_page.open_cart(lazzaro_feed["description"])
+    cart_page.open_cart()
+    cart_page.check_item_in_cart(lazzaro_feed["description"])
 
 
 @allure.story('Проверка очистки корзины')
@@ -28,8 +29,10 @@ def test_add_toy_lazzaro(lazzaro_feed):
     base_page.open_browser()
     base_page.find_item(lazzaro_feed["brand"], lazzaro_feed["description"])
     base_page.add_item_cart()
-    cart_page.open_cart(lazzaro_feed["description"])
+    cart_page.open_cart()
+    cart_page.check_item_in_cart(lazzaro_feed["description"])
     cart_page.clean_cart()
+    cart_page.check_cart_price()
 
 
 @allure.story('Проверка восстановления товара в корзине')
@@ -37,6 +40,9 @@ def test_restoring_del_product(fiory_feed):
     base_page.open_browser()
     base_page.find_item(fiory_feed["brand"], fiory_feed["description"])
     base_page.add_item_cart()
-    cart_page.open_cart(fiory_feed["description"])
+    cart_page.open_cart()
+    cart_page.check_item_in_cart(fiory_feed["description"])
     cart_page.clean_cart()
-    cart_page.recovery_item("1 167 руб.")
+    cart_page.check_cart_price()
+    cart_page.recovery_item()
+    cart_page.check_cart_price("1 167")

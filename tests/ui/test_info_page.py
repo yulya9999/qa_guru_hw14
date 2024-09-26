@@ -1,5 +1,6 @@
 import allure
 import pytest
+
 from zoolandia_project_tests.models.pages.base_page import base_page
 
 
@@ -10,6 +11,7 @@ from zoolandia_project_tests.models.pages.base_page import base_page
     ("/about/delivery/", "Доставка заказа, способы, сроки и стоимость доставки"),
 ])
 def test_navigation_bar_links(url, page_title):
-    base_page.open_browser()
+    base_page.open_browser(url)
+    base_page.validate_url(url)
     base_page.click_nav_bar_text(url)
     base_page.check_title(page_title)

@@ -1,24 +1,23 @@
-from selene import browser, have
 import allure
+from selene import browser, have
+
+from zoolandia_project_tests.data.user import User
 
 
-@allure.epic("Тестирование авторизации пользователя'")
 class AuthPage:
 
-    @allure.feature("Аутентификация пользователя")
-    def user_auth(self, login, password):
+    def user_auth(self, user: User):
         with allure.step('Ввод логина и пароля'):
             browser.open("/auth/")
-            browser.element('.bx-system-auth-form [name="USER_LOGIN"]').type(login)
-            browser.element('.bx-system-auth-form [name="USER_PASSWORD"]').type(password)
+            browser.element('.bx-system-auth-form [name="USER_LOGIN"]').type(user.login)
+            browser.element('.bx-system-auth-form [name="USER_PASSWORD"]').type(user.password)
         with allure.step('Нажатие на кнопку "Войти"'):
             browser.element('.bx-system-auth-form [name="Login"]').click()
         return self
 
-    @allure.feature("Проверка успешной авторизации")
-    def check_successful_auth(self, name):
+    def check_successful_auth(self, user: User):
         with allure.step('Проверка отображения имени пользователя в шапке сайта'):
-            browser.element('.bx_login_top_uname_link').should(have.text(name))
+            browser.element('.bx_login_top_uname_link').should(have.text(user.name))
         return self
 
 
