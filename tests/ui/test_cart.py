@@ -11,7 +11,7 @@ class TestCart:
     def test_add_item_to_cart(self):
         lazzaro_feed = Feed(brand="LAZZARO",
                             description="LAZZARO Adult Dog all breed DEER для собак всех пород с ОЛЕНИНОЙ",
-                            price="10")
+                            price="8 808")
         base_page.open_browser()
         base_page.find_item(lazzaro_feed)
         base_page.add_item_cart()
@@ -23,7 +23,7 @@ class TestCart:
     def test_add_toy_lazzaro(self):
         lazzaro_feed = Feed(brand="LAZZARO",
                             description="LAZZARO Adult Dog all breed DEER для собак всех пород с ОЛЕНИНОЙ",
-                            price="10")
+                            price="8 808")
         base_page.open_browser()
         base_page.find_item(lazzaro_feed)
         base_page.add_item_cart()
