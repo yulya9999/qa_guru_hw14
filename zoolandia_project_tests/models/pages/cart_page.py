@@ -1,8 +1,6 @@
 import allure
 from selene import browser, have
 
-from zoolandia_project_tests.data.feed import Feed
-
 
 class CartPage:
     @allure.feature("Открытие корзины")
@@ -11,9 +9,9 @@ class CartPage:
             browser.element('.bx-basket-block [href="/personal/cart/"]').click()
         return self
 
-    def check_item_in_cart(self, feed: Feed):
-        with allure.step(f'Проверка наличия товара "{feed.description}" в корзине'):
-            browser.element('.basket-item-info-name').should(have.text(feed.description))
+    def check_item_in_cart(self, description):
+        with allure.step(f'Проверка наличия товара "{description}" в корзине'):
+            browser.element('.basket-item-info-name').should(have.text(description))
         return self
 
     def clean_cart(self):
@@ -21,12 +19,10 @@ class CartPage:
             browser.element('[class="basket-item-actions-remove visible-xs"]').click()
         return self
 
-    def check_cart_price(self, feed: Feed, price=None):
+    def check_cart_price(self, price=None):
+        price = price or 0
         with allure.step("Стоимость корзины"):
-            if price is not None:
-                browser.element('.basket-coupon-block-total-price-current').should(have.text(f"{feed.price} руб."))
-            else:
-                browser.element('.basket-coupon-block-total-price-current').should(have.text("0 руб."))
+            browser.element('.basket-coupon-block-total-price-current').should(have.text(f"{price} руб."))
             return self
 
     def recovery_item(self):

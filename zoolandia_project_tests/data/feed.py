@@ -5,4 +5,4 @@ from dataclasses import dataclass
 class Feed:
     brand: str
     description: str
-    price: str
+    price: str = None
