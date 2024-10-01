@@ -16,6 +16,7 @@ class TestCart:
         base_page.add_item_cart()
         cart_page.open_cart()
         cart_page.check_item_in_cart(lazzaro_feed.description)
+        cart_page.clean_cart()
 
     @allure.story('Проверка очистки корзины')
     def test_add_toy_lazzaro(self):
@@ -43,3 +44,4 @@ class TestCart:
         cart_page.check_cart_price()
         cart_page.recovery_item()
         cart_page.check_cart_price(fiory_feed.price)
+        cart_page.clean_cart()
