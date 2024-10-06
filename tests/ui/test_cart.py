@@ -43,4 +43,3 @@ class TestCart:
         cart_page.check_cart_price()
         cart_page.recovery_item()
         cart_page.check_cart_price(fiory_feed.price)
-        cart_page.clean_cart()
